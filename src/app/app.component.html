@@ -1,0 +1,17 @@
+<app-chiffre
+  [value]="digit1"
+  (changeValueEmitter)="changeValue(1, $event)"
+></app-chiffre>
+<app-chiffre
+  [value]="digit2"
+  (changeValueEmitter)="changeValue(2, $event)"
+></app-chiffre>
+<app-chiffre
+  [value]="digit3"
+  (changeValueEmitter)="changeValue(3, $event)"
+></app-chiffre>
+
+<br />
+<br />
+
+Combinaison : {{ digit1 }} - {{ digit2 }} - {{ digit3 }}
